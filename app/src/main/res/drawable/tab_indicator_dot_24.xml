@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- TabLayout sets min indicator size 24dp. Use padding for compatibility with api21. -->
+    <item
+        android:bottom="9dp"
+        android:left="9dp"
+        android:right="9dp"
+        android:top="9dp">
+        <shape android:shape="oval">
+            <size
+                android:width="6dp"
+                android:height="6dp" />
+            <solid android:color="@android:color/black" />
+        </shape>
+    </item>
+</layer-list>
