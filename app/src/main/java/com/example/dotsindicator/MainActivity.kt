@@ -38,8 +38,16 @@ class MainActivity : AppCompatActivity() {
 //            tab.icon?.applyApi21Tint(this, R.color.black_30)
 //            tab.view.background?.mutate()?.setColorFilter(Color.GREEN, PorterDuff.Mode.MULTIPLY)
 //            tab.view.setBackgroundResource(R.drawable.tab_indicator_dot_ring)
+//            tab.customView = View(this).apply {
+////                setBackgroundResource(R.drawable.tab_indicator_dot_ring)
+//                setBackgroundColor(Color.GREEN)
+////                layoutParams = ViewGroup.LayoutParams(MATCH_PARENT, MATCH_PARENT)
+//            }
+//            tab.view.setBackgroundColor(Color.GREEN)
+//            tab.view.elevation = -1f
+            tab.setIcon(R.drawable.tab_indicator_dot_ring)
+//            tab.icon = ColorDrawable(Color.GREEN)
         }.attach()
-
     }
 
     inner class PagerAdapter : RecyclerView.Adapter<ViewHolder>() {
